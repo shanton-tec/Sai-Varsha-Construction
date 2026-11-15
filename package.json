@@ -1,0 +1,41 @@
+{
+  "name": "sai-varsha-construction-pro-editor",
+  "private": true,
+  "version": "3.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "api": "node backend/server.js",
+    "api:dev": "node --watch backend/server.js",
+    "dev:full": "concurrently -k \"npm:api:dev\" \"npm:dev\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:api": "node --test backend/tests/api-check.js"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.3.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.7",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "express-validator": "^7.3.2",
+    "framer-motion": "^12.23.22",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "lucide-react": "^0.545.0",
+    "pg": "^8.23.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.4",
+    "three": "^0.180.0",
+    "vite": "^7.1.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "concurrently": "^10.0.6",
+    "vitest": "^5.0.3"
+  }
+}
